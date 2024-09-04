@@ -42,10 +42,10 @@ with gr.Blocks() as demo:
             label="Top P",
         )
         max_tkns = gr.Slider(
-            minimum=300,
-            maximum=131072,
-            value=1024,
-            step=100,
+            minimum=10,
+            maximum=8192,
+            value=2048,
+            step=500,
             interactive=True,
             label="Max output tokens",
         )
